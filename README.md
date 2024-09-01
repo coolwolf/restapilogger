@@ -24,7 +24,7 @@ So it may be useful to collect logs with many different log servers.
 
 First define settings in appsettings.json
 
-'''
+```
 "Logging": {
     "LogLevel": {
       "Default": "Information",
@@ -40,31 +40,31 @@ First define settings in appsettings.json
       "AuthPass":"{mystreampass}"
     }
   }
-'''
+```
 
 Just after
-'''
+```
 var builder = WebApplication.CreateBuilder(args);
-'''
+```
 in Program.cs. Add
-'''
+```
 builder.Logging.ClearProviders();
 builder.Logging.AddRestApiLogger();
-'''
+```
 
 If you want to log from Program.cs
 
-'''
+```
 var logger = app.Services.GetRequiredService<ILogger<Program>>();
 logger.LogDebug(1, "This is Debug Log.");
 logger.LogInformation(3, "This is info Log");
 logger.LogWarning(5, "This is warning log.");
 logger.LogError(7, "This is Error Log.");
 logger.LogTrace(5, "== 120.");
-'''
+```
 
 If you want to log from Class/Controller:
-'''
+```
 public class TestController(ILogger<TestController> log, IMyMethodInterface mmi) : ControllerBase
 {
     [HttpGet]
@@ -79,7 +79,7 @@ public class TestController(ILogger<TestController> log, IMyMethodInterface mmi)
         }
     }
 }
-'''
+```
 
 
 # Helping
