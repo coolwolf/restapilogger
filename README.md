@@ -8,7 +8,7 @@ This project helps standard .Net Core ILogger send logs to Web Api target.
 
 We were using [Parseable](https://www.parseable.com/) as logs target.
 Because we use "Basic Authentication" to post logs, none of [ILogger](https://learn.microsoft.com/en-us/aspnet/core/fundamentals/logging/?view=aspnetcore-8.0) and [Serilog](https://serilog.net/) helped.
-Implementing "Custom HttpClient" for "Serilog.Sinks.Http" was the first thing we tried. But "Adding Custom Logger" will decrease code and needed extensions we think.
+Implementing "Custom HttpClient" for "Serilog.Sinks.Http" was the first thing we tried. But "Adding Custom Logger" will decrease code and needed extensions we thought.
 
 # Status
 
