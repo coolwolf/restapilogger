@@ -89,7 +89,3 @@ public class TestController(ILogger<TestController> log, IMyMethodInterface mmi)
 }
 ```
 
-
-# Helping
-
-You are always welcome to use and improve code.
