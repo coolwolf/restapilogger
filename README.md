@@ -1,6 +1,9 @@
-## IMPORTANT NOTE ##
-Enabling this code does not launch browser with VsCode on OsX
-Visual Studio and JetBrains Rider are launching browser correctly
+---
+## !!! IMPORTANT NOTE ##
+Enabling this code does not launch browser with VsCode on OsX.
+
+Visual Studio and JetBrains Rider are launching browser correctly.
+---
 
 # restapilogger
 NetCore Rest Api Logger
